@@ -84,9 +84,9 @@ export default {
 
             this.$http.post(API_URL+'/notification/add',newNotification)
                 .then(function(response){
-                    parent.noti.descryption = ''
+                    // parent.noti.descryption = ''
                     console.log(response.data);
-                    //alert(response.body.msg)
+                    alert(response.body.msg)
                     },error=>{
                         console.log(error)
                     }
